@@ -1,37 +1,35 @@
 import React from 'react';
-import {
-  Nav,
-  NavLink,
-  Bars,
-  NavMenu,
-  NavBtn,
-  NavBtnLink,
-} from './NavbarElements';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown'
+import Nav from 'react-bootstrap/Nav'
+import background from "../images/korriban.jpg"
   
-const Navbar = () => {
+const Header = () => {
   return (
+    <div
+    style={{
+      backgroundImage: `url(${background})`,
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+    }}
+  >
     <>
-      <Nav>
-        <Bars />
-  
-        <NavMenu>
-            <h1>Thomas Musler</h1>
-          <NavLink to='/bio' activeStyle>
-            About Me
-          </NavLink>
-          <NavLink to='/work' activeStyle>
-            My Work
-          </NavLink>
-          <NavLink to='/contact' activeStyle>
-            Contact Me
-          </NavLink>
-        </NavMenu>
-        <NavBtn>
-          <NavBtnLink to='/signin'>Sign In</NavBtnLink>
-        </NavBtn>
-      </Nav>
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar.Brand href="#home">Thomas Musler</Navbar.Brand>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav className="navbarNav">
+            <NavDropdown.Item href="/">About Me</NavDropdown.Item>
+            <NavDropdown.Item href="/work">Work</NavDropdown.Item>
+            <NavDropdown.Item href="/contact">Contact</NavDropdown.Item>
+            <NavDropdown.Divider />
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
     </>
+    </div>
   );
 };
-  
-export default Navbar;
+
+export default Header;
