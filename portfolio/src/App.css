@@ -113,6 +113,12 @@ body {
   width: 64px;
 }
 
+.footer {
+  flex-shrink: 0;
+  text-align: center;
+}
+
+
 @media screen and (max-width: 992px) {
   .main-content img {
       max-width: 95%;

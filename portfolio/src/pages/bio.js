@@ -4,18 +4,7 @@ import React from 'react';
   
 const Bio = () => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        // backgroundImage: `url(${background})`,
-        // backgroundPosition: 'center',
-        // backgroundSize: 'cover',
-        // backgroundRepeat: 'no-repeat',
-        justifyContent: 'Right',
-        alignItems: 'Right',
-        height: '100vh'
-      }}
-    >
+    <div>
 
         <main>
             <body>

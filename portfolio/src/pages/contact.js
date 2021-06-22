@@ -3,18 +3,7 @@ import React from 'react';
   
 const Contact = () => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        // backgroundImage: `url(${background})`,
-        // backgroundPosition: 'center',
-        // backgroundSize: 'cover',
-        // backgroundRepeat: 'no-repeat',
-        justifyContent: 'Right',
-        alignItems: 'Right',
-        height: '100vh'
-      }}
-    >
+    <div>
       <body>
             <section className="main-content-box">
                 <h1 id="contact-me">Contact Me</h1>
