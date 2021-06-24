@@ -118,6 +118,13 @@ body {
     opacity:0.8;
 }
 
+.card-body {
+  background-color: var(--grey);
+}
+
+.card-footer {
+  background-color: var(--grey);
+}
 .mash {
   height: 64px;
   width: 64px;
@@ -129,6 +136,10 @@ body {
   height:100vh;
 }
 
+.foot-button{
+  margin-right: 15px;
+  bottom: 0;
+}
 
 .footer {
   flex-shrink: 0;
@@ -144,7 +155,7 @@ body {
   .main-content img {
       max-width: 95%;
   }
-  .main-content-contact {
-    float: left;
+  .work-content-box {
+    flex-direction: column;
   }
 }
