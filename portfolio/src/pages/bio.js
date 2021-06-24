@@ -4,15 +4,15 @@ import React from 'react';
   
 const Bio = () => {
   return (
-    <div>
+    <>
 
-        <main>
-            <body>
+        
+            <main>
                 <section className="main-content">
                     <section className="main-content-box">
                     <h1 id="About Me">About Me</h1>
                         <div className="about-container">
-                            <img className="picture" src="../images/MyPhoto.jpeg" alt="The Face of Thom"></img>
+                            <img className="picture" src="images/MyPhoto.jpeg" alt="The Face of Thom"></img>
                             <div className="about-text">
                             <p>
                                 Hello! Thank you for taking the time to grace my page with your eyes. My name is Thomas Musler (Though
@@ -28,21 +28,21 @@ const Bio = () => {
                             </p>
                             <p>
                                 In terms of programming, I've grown confortable with HTML5, CSS, JavaScript, NodeJS, NPM(and its various
-                                applications), as well as MySql, Mongo, Heroku. I have an active understanding of current responsive web
+                                applications), as well as MySql, Mongo, Heroku, and React (what this site is built on). I have an active understanding of current responsive web
                                 design and an open and inquiring mind for when new skills can be learned!
                             </p>
                             <p>
-                                Don't just take my work for it, go ahead and peruse my works featured here, as well as my GitHub and
+                                Don't just take my word for it, go ahead and peruse my works featured here, as well as my GitHub and
                                 LinkedIn.
                             </p>
                             </div>
                         </div>
                     </section>
                 </section>
-            </body>
-        </main>
-        <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
-    </div>
+            </main>
+        
+        {/* <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script> */}
+    </>
     );
 };
 export default Bio;

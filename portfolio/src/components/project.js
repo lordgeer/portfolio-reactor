@@ -1,17 +1,21 @@
 import React from 'react';
+import Card from 'react-bootstrap/Card'
+import Button from 'react-bootstrap/Button'
 
 const Project = ({project}) => {
     if (project) {
         return (
-            <div className="col-12 col-md-4">
-            <img className="card-img" scr={project.image} alt={project.description}></img>
-            <div className= "card-body">
-                <h3 className = "card-title">{project.name}</h3>
-                <p classNme = "card-text">{project.description}</p>
-                <a href={project.repo} className = "btn btn-secondary m-1">Repo</a>
-                <a href={project.deployed} className = "btn btn-secondary m-1">Deplpoyed</a>
-                </div>
-                </div>
+            <Card>
+                <Card.Img src={project.image} alt={project.description}></Card.Img>
+                <Card.Body>
+                    <Card.Title>{project.name}</Card.Title>
+                    <Card.Text>
+                    {project.description}
+                    </Card.Text>
+                    <Button variant="secondary" href={project.repo}>Repo</Button>
+                    <Button variant="secondary" href={project.deployed}>Deployed</Button>
+                </Card.Body>
+            </Card>
             );
     }
 

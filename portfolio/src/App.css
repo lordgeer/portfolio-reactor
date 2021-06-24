@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,7 +35,7 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 :root {
   --grey: rgb(190, 188, 188);
@@ -47,15 +47,24 @@
   --border: rgba(219, 175, 175, 0.247);
 }
 body {
-  background: no-repeat center center fixed;
+  background: transparent no-repeat center center fixed;
+  /* background-image: url("images/korriban.jpg"); */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  position: relative;
+  height: 100vh;
+  /* margin-bottom: 60px; */
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .navbarNav {
   justify-content: flex-end;
+  margin-bottom: 3pc;
+
 
 }
 .navbar-nav .nav-item .nav-link {
@@ -70,7 +79,7 @@ body {
   padding: 0 0 0 0;
   margin-right: 10%;
   height: auto;
-  width: 10%;
+  width: 15%;
   object-fit: contain;
   align-self: flex-start;
   margin: 0 15px 5px 0px;
@@ -98,7 +107,8 @@ body {
 
 .work-content-box {
   flex: 1;
-    margin: auto;
+    margin: 2px;
+    background: transparent;
     background-color: var(--grey);
     margin-bottom: 15px;
     padding: 20px;
@@ -113,9 +123,20 @@ body {
   width: 64px;
 }
 
+.sec-div {
+  display: flex;
+  flex-direction: column;
+  height:100vh;
+}
+
+
 .footer {
   flex-shrink: 0;
   text-align: center;
+  /* position: absolute; */
+  bottom:0;
+  margin-top: auto;
+  color: #fff;
 }
 
 
