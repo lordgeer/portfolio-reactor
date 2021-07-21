@@ -6,9 +6,9 @@ const projects = [
     {
         name: 'Tabletop Auction House',
         description: 'An auction house interface for roleplaying game masters and players to buy, sell, and trade in-game items for fun and profit',
-        image:"./images/ttah.png",
-        repo:"https://github.com/lordgeer/Tabletop_Auction_House",
-        deployed: "https://tabletop-auction-house.herokuapp.com/"
+        image:"./images/ttah2.png",
+        repo:"https://github.com/smakela13/tabletop-auction-house-react-edition",
+        deployed: "https://tabletop-auction-house-2.herokuapp.com/"
     },
     {
         name: 'Note Taker',
