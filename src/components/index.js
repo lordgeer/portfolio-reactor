@@ -2,17 +2,10 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import Nav from 'react-bootstrap/Nav'
-// import background from "./korriban.jpg"
   
 const Header = () => {
   return (
-    <div
-    style={{
-      // backgroundImage: `url(${background})`,
-      // backgroundPosition: 'center',
-      // backgroundSize: 'cover',
-      // backgroundRepeat: 'no-repeat',
-    }}>
+    <div>
     <>
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="navbarNav">
       <Navbar.Brand href="/">Thomas Musler</Navbar.Brand>

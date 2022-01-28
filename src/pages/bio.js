@@ -1,6 +1,5 @@
 
 import React from 'react';
-// import background from "../images/korriban.jpg"
   
 const Bio = () => {
   return (
@@ -16,7 +15,7 @@ const Bio = () => {
                             <div className="about-text">
                             <p>
                                 Hello! Thank you for taking the time to grace my page with your eyes. My name is Thomas Musler (Though
-                                you probably noticed that from the header). I'm a full stack develper in training!
+                                you probably noticed that from the header).
                             </p>
                             <p>
                                 Personally I'm somone that enjoys detail oriented work and anything that resembles a good puzzle. I have
@@ -28,7 +27,7 @@ const Bio = () => {
                             </p>
                             <p>
                                 In terms of programming, I've grown confortable with HTML5, CSS, JavaScript, NodeJS, NPM(and its various
-                                applications), as well as MySql, Mongo, Heroku, and React (what this site is built on). I have an active understanding of current responsive web
+                                applications), as well as MySql, Mongo, Heroku, Hadoop, Spark, and React (what this site is built on). I have an active understanding of current responsive web
                                 design and an open and inquiring mind for when new skills can be learned!
                             </p>
                             <p>
@@ -40,8 +39,6 @@ const Bio = () => {
                     </section>
                 </section>
             </main>
-        
-        {/* <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script> */}
     </>
     );
 };
